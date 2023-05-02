@@ -1,5 +1,22 @@
+@charset "UTF-8";
+/******* Police d'écriture du site (+ taille...) *******/
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+h1, h2, logo {
+  font-family: "Shrikhand";
+}
+
+img {
+  object-fit: cover;
+}
+
 body {
-  background-color: red;
+  background-color: #9356DC;
   color: pink;
 }
 
