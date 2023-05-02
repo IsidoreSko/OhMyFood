@@ -1,0 +1,6 @@
+@use "../utils/variable.scss" as v;
+
+body{
+    background-color: v.$primary-color;
+    color: pink;
+}
