@@ -1,0 +1,13 @@
+@use "../utils/variable.scss" as v;
+
+// Au sujet du footer:
+
+.all-footers {
+    background-color: v.$anthracite-color;
+}
+
+.all-footers h4, .all-footers a, .all-footers li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}

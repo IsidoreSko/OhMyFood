@@ -1,6 +1,66 @@
 @use "../utils/variable.scss" as v;
 
-body{
-    background-color: v.$primary-color;
-    color: pink;
+// Généralités concernant le main-container:
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    // max-width: 1440px;
+    margin: 0px;
+    padding: 0px;
+    // justify-content: center;
+    background-color: white;
+    // width: 100%;
+    box-sizing: border-box;
+}
+
+// Police d'écriture du site (+ taille...):
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    // width: 100%;
+}
+
+// Police des logos et des titres :
+
+h1, h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.card-subtitle {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.Info-Barre p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+.like-a-logo {
+    font-family: 'Shrikhand';
+    font-size: 18px;
+    line-height: 26px;
+
+}
+
+// Background section"restaurants"
+
+.restaurants {
+    background-color: v.$light-gray-color;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }

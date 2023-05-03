@@ -1,24 +1,9 @@
 
-/******* Police d'écriture du site (+ taille...) *******/
-
-* {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-}
-
-// Police des logos et des titres
-h1, h2, logo {
-    font-family: 'Shrikhand';
-}
 
 //  Couleurs utilisées dans le site:
+
 $primary-color: #9356DC;
 $secondery-color: #FF79DA;
 $third-color: #99E2D0;
-
-// Conportement des images dans les acrtes
-img {
-    object-fit: cover;
-}
+$light-gray-color: #F6F6F6;
+$anthracite-color : #353535;
