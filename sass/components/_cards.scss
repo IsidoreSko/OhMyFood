@@ -1,10 +1,24 @@
-// Conportement des images dans les acrtes
+// Conportement des images dans les cartes:
+
 .card img {
     object-fit: cover;
-    height: 80%;
+    height: 70%;
     width: 100%;
     border-radius:20px 20px 0px 0px ;
-    // box-sizing: border-box;
+}
+
+// Texte contenu dans les cartes:
+
+.restaurants h2 {
+    margin-left: 10px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+.card-content {
+    margin-left: 15px;
 }
 
 // En ce qui concerne les cartes:
@@ -16,9 +30,7 @@
     display:flex;
     flex-direction: column;
     border-radius: 20px;
-   
-   
+    height: 251px;
     text-decoration: none;
     color: black;
 }
-

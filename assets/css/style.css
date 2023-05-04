@@ -38,6 +38,7 @@ h3 {
 
 .like-a-logo {
   font-family: "Shrikhand";
+  font-weight: 400;
   font-size: 18px;
   line-height: 26px;
 }
@@ -51,9 +52,21 @@ h3 {
 
 .card img {
   object-fit: cover;
-  height: 80%;
+  height: 70%;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
+}
+
+.restaurants h2 {
+  margin-left: 10px;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+.card-content {
+  margin-left: 15px;
 }
 
 .card {
@@ -62,6 +75,7 @@ h3 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+  height: 251px;
   text-decoration: none;
   color: black;
 }
@@ -74,6 +88,21 @@ h3 {
   text-decoration: none;
   list-style: none;
   color: white;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.all-footers i {
+  width: 14px;
+  height: 16px;
+}
+
+.without-i {
+  margin-left: -20px;
+}
+
+.like-a-logo {
+  margin-left: 35px;
 }
 
 .all-headers {
@@ -85,26 +114,55 @@ h3 {
   align-items: center;
 }
 
+.all-headers img {
+  width: 162px;
+  height: 44px;
+  margin-top: 20px;
+}
+
+.fa-arrow-left {
+  visibility: hidden;
+}
+
 .Localisation-Bar {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 50px;
-  background-color: #F6F6F6;
+  background-color: #EAEAEA;
 }
 
-.Localisation-Bar i {
+.fa-location-dot {
   margin: 20px;
 }
 
-.Info-Bar .title, .Info-Bar p {
+.Info-Bar .title {
   text-align: center;
+  margin-top: 40px;
+}
+
+.Info-Bar p {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .Info-Bar {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  height: 300px;
+}
+
+.functioning h2 {
+  margin-left: 10px;
+}
+
+.all-gray-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -112,15 +170,58 @@ h3 {
   width: 218px;
   height: 50px;
   border-radius: 25px;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border: none;
 }
 
-.Info-Bar .texte {
+.button-purple .texte {
   text-decoration: none;
   color: white;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+}
+
+.button-gray {
+  width: 322px;
+  height: 72px;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  transform: translate(-230%);
+  border-radius: 50%;
+  background-color: #9356DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+.button-gray a {
+  width: 177.2px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.button-gray i {
+  color: #9356DC;
+  margin-right: 5%;
+  padding: 0px;
+  width: 16px;
+  height: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

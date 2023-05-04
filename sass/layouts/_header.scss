@@ -1,3 +1,5 @@
+@use "../utils/variable.scss" as v;
+
 // En ce qui concerne le header:
 
 .all-headers {
@@ -7,4 +9,14 @@
      flex-direction: row;
      justify-content: center;
      align-items: center;
+}
+
+.all-headers img {
+     width: 162px;
+     height: 44px;
+     margin-top: 20px;
+}
+
+.fa-arrow-left {
+     visibility: hidden;
 }

@@ -1,0 +1,71 @@
+@use "../utils/variable.scss" as v;
+
+// Bouton violet en dégradé :
+
+.button-purple {
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(#ff79da ,#9356dc);
+    // background: linear-gradient(193.33deg, #FF79DA 123.93%, #9356DC -11.44%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+
+}
+
+.button-purple .texte {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+// Bouton section gris:
+
+.button-gray {
+    width: 322px;
+    height: 72px;
+    border-radius: 20px;
+    background-color: v.$light-gray-color;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+// Pastille ronde avec le numéro:
+
+ .number {
+    transform: translate(-230%);
+    border-radius: 50%;
+    background-color: v.$primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 24px;
+    height: 24px;
+}
+
+// Texte dans le bouton :
+
+.button-gray a {
+    width: 177.2px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+// Icone dans le bouton:
+
+.button-gray i {
+    color: v.$primary-color;
+    margin-right: 5%;
+    padding: 0px;
+    width: 16px;
+    height: 16px;
+}

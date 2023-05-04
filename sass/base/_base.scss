@@ -5,12 +5,9 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    // max-width: 1440px;
     margin: 0px;
     padding: 0px;
-    // justify-content: center;
     background-color: white;
-    // width: 100%;
     box-sizing: border-box;
 }
 
@@ -19,7 +16,6 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    // width: 100%;
 }
 
 // Police des logos et des titres :
@@ -51,12 +47,13 @@ h3 {
 
 .like-a-logo {
     font-family: 'Shrikhand';
+    font-weight: 400;
     font-size: 18px;
     line-height: 26px;
 
 }
 
-// Background section"restaurants"
+// Background section "restaurants"
 
 .restaurants {
     background-color: v.$light-gray-color;

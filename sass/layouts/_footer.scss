@@ -6,8 +6,26 @@
     background-color: v.$anthracite-color;
 }
 
+// En ce qui concerne les textes:
+
 .all-footers h4, .all-footers a, .all-footers li {
     text-decoration: none;
     list-style: none;
     color: white;
+    padding-left: 20px;
+    margin-bottom: 10px;
 }
+
+.all-footers i {
+    width: 14px;
+    height: 16px;
+}
+
+.without-i {
+    margin-left: -20px;
+}
+
+.like-a-logo {
+    margin-left: 35px;
+}
+
