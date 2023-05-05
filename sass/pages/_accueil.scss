@@ -20,11 +20,15 @@
 .Info-Bar .title {
     text-align: center;
     margin-top: 40px;
+    width: 70%;
 }
 
 .Info-Bar p {
     text-align: center;
     margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .Info-Bar {
@@ -32,7 +36,7 @@
     flex-direction: column;
     align-items: center;
     background-color: v.$light-gray-color;
-    height: 300px;
+    height: 320px;
 }
 
 
@@ -40,6 +44,8 @@
 
 .functioning h2 {
     margin-left: 10px;
+    margin-top: 45px;
+    margin-bottom: 0px;
 }
 
 // Disposition de la section "Fonctionnement":
@@ -49,5 +55,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
 }
 

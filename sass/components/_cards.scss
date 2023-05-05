@@ -1,31 +1,18 @@
-// Conportement des images dans les cartes:
+@use "../utils/variable.scss" as v;
 
-.card img {
-    object-fit: cover;
-    height: 70%;
-    width: 100%;
-    border-radius:20px 20px 0px 0px ;
-}
 
-// Texte contenu dans les cartes:
+// Titre de la section:
 
 .restaurants h2 {
     margin-left: 10px;
-}
-
-h3 {
-    margin-bottom: 5px;
-}
-
-.card-content {
-    margin-left: 15px;
+    margin-bottom: 0px;
 }
 
 // En ce qui concerne les cartes:
 
-
 .card {
-    margin: 10px;
+    margin: 20px;
+    margin-bottom: 0px;
     background-color: white;
     display:flex;
     flex-direction: column;
@@ -33,4 +20,43 @@ h3 {
     height: 251px;
     text-decoration: none;
     color: black;
+        &__card-content {
+         margin-left: 15px;
+}
+        & h3 {
+        margin-bottom: 5px;
+}
+        &__card-subtitle {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px;
+}
+}
+
+  // Conportement des images dans les cartes:
+
+.card img {
+     object-fit: cover;
+     height: 70%;
+     width: 100%;
+     border-radius:20px 20px 0px 0px ;
+}
+
+// Post-it "Nouveau"
+
+.New {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: v.$green-color;
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    background-color: v.$light-green-color;
+    position: absolute;
+    left: 68%;
+    margin-top: 15px;
 }

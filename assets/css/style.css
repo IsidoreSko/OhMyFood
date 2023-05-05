@@ -24,18 +24,6 @@ h3 {
   line-height: 21px;
 }
 
-.card-subtitle {
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 20px;
-}
-
-.Info-Barre p {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 21px;
-}
-
 .like-a-logo {
   font-family: "Shrikhand";
   font-weight: 400;
@@ -47,7 +35,39 @@ h3 {
   background-color: #F6F6F6;
   width: 100%;
   margin: 0px;
-  padding: 0px;
+  padding-bottom: 60px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.restaurants h2 {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.card {
+  margin: 20px;
+  margin-bottom: 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  height: 251px;
+  text-decoration: none;
+  color: black;
+}
+.card__card-content {
+  margin-left: 15px;
+}
+.card h3 {
+  margin-bottom: 5px;
+}
+.card__card-subtitle {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
 }
 
 .card img {
@@ -57,27 +77,21 @@ h3 {
   border-radius: 20px 20px 0px 0px;
 }
 
-.restaurants h2 {
-  margin-left: 10px;
-}
-
-h3 {
-  margin-bottom: 5px;
-}
-
-.card-content {
-  margin-left: 15px;
-}
-
-.card {
-  margin: 10px;
-  background-color: white;
+.New {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.5px;
   display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  height: 251px;
-  text-decoration: none;
-  color: black;
+  justify-content: center;
+  align-items: center;
+  color: #008766;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 68%;
+  margin-top: 15px;
 }
 
 .all-footers {
@@ -88,7 +102,7 @@ h3 {
   text-decoration: none;
   list-style: none;
   color: white;
-  padding-left: 20px;
+  padding-left: 5px;
   margin-bottom: 10px;
 }
 
@@ -98,7 +112,7 @@ h3 {
 }
 
 .without-i {
-  margin-left: -20px;
+  margin-left: -10px;
 }
 
 .like-a-logo {
@@ -113,7 +127,6 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-
 .all-headers img {
   width: 162px;
   height: 44px;
@@ -140,11 +153,15 @@ h3 {
 .Info-Bar .title {
   text-align: center;
   margin-top: 40px;
+  width: 70%;
 }
 
 .Info-Bar p {
   text-align: center;
   margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .Info-Bar {
@@ -152,11 +169,13 @@ h3 {
   flex-direction: column;
   align-items: center;
   background-color: #F6F6F6;
-  height: 300px;
+  height: 320px;
 }
 
 .functioning h2 {
   margin-left: 10px;
+  margin-top: 45px;
+  margin-bottom: 0px;
 }
 
 .all-gray-buttons {
@@ -164,6 +183,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 40px;
 }
 
 .button-purple {
@@ -173,9 +193,6 @@ h3 {
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: none;
-}
-
-.button-purple .texte {
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -195,8 +212,7 @@ h3 {
   align-items: center;
   justify-content: center;
 }
-
-.number {
+.button-gray__number {
   transform: translate(-230%);
   border-radius: 50%;
   background-color: #9356DC;
@@ -207,16 +223,14 @@ h3 {
   width: 24px;
   height: 24px;
 }
-
-.button-gray a {
+.button-gray__a {
   width: 177.2px;
   text-decoration: none;
   color: black;
   font-weight: 500;
   font-size: 16px;
 }
-
-.button-gray i {
+.button-gray__i {
   color: #9356DC;
   margin-right: 5%;
   padding: 0px;
