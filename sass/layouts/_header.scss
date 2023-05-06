@@ -3,19 +3,26 @@
 // En ce qui concerne le header:
 
 .all-headers {
-     height: 63px;
-     width: 100%;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-           & img {
-     width: 162px;
-     height: 44px;
-     margin-top: 20px;
-}
-} 
-
-.fa-arrow-left {
+  height: 63px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  & img {
+    width: 162px;
+    height: 44px;
+    margin-top: 15px;
+  }
+     & i {
      visibility: hidden;
+      width: 17px;
+      height: 16px;
+      color : v.$anthracite-color;
+      position: absolute;
+      left: 7%;
+      margin-top: 25px;
 }
+}
+
+    
