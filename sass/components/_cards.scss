@@ -33,7 +33,15 @@
 }
 }
 
-  // Conportement des images dans les cartes:
+// Icone coeur:
+
+.card i {
+    position: absolute;
+    left: 80%;
+    margin-top: -10px;
+}
+
+// Conportement des images dans les cartes:
 
 .card img {
      object-fit: cover;
