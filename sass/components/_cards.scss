@@ -1,14 +1,14 @@
 @use "../utils/variable.scss" as v;
 
 
-// Titre de la section:
+// Titre de la section restaurant:
 
 .restaurants h2 {
     margin-left: 10px;
     margin-bottom: 0px;
 }
 
-// En ce qui concerne les cartes:
+// En ce qui concerne les cartes des restaurant pages d'accueil:
 
 .card {
     margin: 20px;
@@ -23,6 +23,9 @@
         &__card-content {
          margin-left: 15px;
 }
+        &_card-text {
+            width: 70%;
+        }
         & h3 {
         margin-bottom: 5px;
 }
@@ -36,18 +39,28 @@
 // Icone coeur:
 
 .card i {
+    width: 25px;
+    height: 25px;
+    font-size: 1.5em;
     position: absolute;
     left: 80%;
-    margin-top: -10px;
+    margin-top: -40px;
 }
 
-// Conportement des images dans les cartes:
 
-.card img {
-     object-fit: cover;
-     height: 70%;
-     width: 100%;
-     border-radius:20px 20px 0px 0px ;
+ .heart__full {
+    opacity: 0;
+    z-index: 1;
+    background-image:linear-gradient(#ff79da ,#9356dc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.heart__full:hover  { 
+        opacity: 1;
+        transform: opacity 250ms; 
 }
 
 // Post-it "Nouveau"
@@ -67,4 +80,22 @@
     position: absolute;
     left: 68%;
     margin-top: 15px;
+}
+
+// En ce qui concerne les cartes des menus des restaurants:
+
+.new-card {
+    width: 90%;
+    height: 70%;
+    border-radius: 15px;
+    background-color: white;
+        &__card-content{
+                margin: 10px;
+        }
+        &__card-subtitle {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+        }
 }

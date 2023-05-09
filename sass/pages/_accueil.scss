@@ -45,16 +45,16 @@
 .functioning h2 {
     margin-left: 10px;
     margin-top: 45px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
 }
 
-// Disposition de la section "Fonctionnement":
+// Section des rectangles gris:
 
-.all-gray-buttons {
+.all-gray-rectangle {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
 }
+
 

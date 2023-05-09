@@ -28,7 +28,7 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body class="main-container">
+  <body class="new-main-container">
     <!-- Ajout du haeder -->
     <header class="all-headers">
       <i class="fa-solid fa-arrow-left fa-lg"></i>
@@ -52,24 +52,24 @@
     <!-- Ajout de la section "fonctionnement" -->
     <section class="functioning">
       <h2>Fonctionnement</h2>
-      <div class="all-gray-buttons">
-        <!-- Premier bouton -->
-        <div class="button-gray">
-          <div class="button-gray__number">1</div>
-          <i class="fa-solid fa-mobile-screen-button button-gray__i"></i>
-          <a href="#" class="button-gray__a">Choisissez un restaurant</a>
+      <div class="all-gray-rectangle">
+        <!-- Premier rectangle gris-->
+        <div class="rectangle-gray">
+          <div class="rectangle-gray__number">1</div>
+          <i class="fa-solid fa-mobile-screen-button rectangle-gray__i"></i>
+          <p class="rectangle-gray__text">Choisissez un restaurant</p>
         </div>
-        <!-- Deuxième bouton -->
-        <div class="button-gray">
-          <div class="button-gray__number">2</div>
-          <i class="fa-sharp fa-solid fa-list-ul button-gray__i"></i>
-          <a href="#" class="button-gray__a">Composez votre menu</a>
+        <!-- Deuxième rectangle gris -->
+        <div class="rectangle-gray">
+          <div class="rectangle-gray__number">2</div>
+          <i class="fa-sharp fa-solid fa-list-ul rectangle-gray__i"></i>
+          <p class="rectangle-gray__text">Composez votre menu</p>
         </div>
-        <!-- Troisième bouton -->
-        <div class="button-gray">
-          <div class="button-gray__number">3</div>
-          <i class="fa-solid fa-store button-gray__i"></i>
-          <a href="#" class="button-gray__a">Dégustez au restaurant</a>
+        <!-- Troisième rectangle gris -->
+        <div class="rectangle-gray">
+          <div class="rectangle-gray__number">3</div>
+          <i class="fa-solid fa-store rectangle-gray__i"></i>
+          <p class="rectangle-gray__texte">Dégustez au restaurant</p>
         </div>
       </div>
     </section>
@@ -77,17 +77,21 @@
     <section class="restaurants">
       <h2 id="restaurants">Restaurants</h2>
       <!-- Première carte "restaurant" -->
-      <a href="#" class="card"
+      <a href="./restaurants/palette.html" class="card"
         ><p class="New">Nouveau</p>
         <img
           src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
           alt="Assiette garnie posée en bord de table avec deux mains qui la saisissent."
         />
         <div class="card__card-content">
-          <h3>La palette du goût</h3>
-          <span class="card__card-subtitle">Ménilmontant</span
-          ><i class="fa-sharp fa-solid fa-heart fa-xl"></i>
-          <i class="fa-sharp fa-regular fa-heart fa-xl"></i>
+          <div class="card__card-text">
+            <h3>La palette du goût</h3>
+            <span class="card__card-subtitle">Ménilmontant</span>
+          </div>
+          <div class="heart">
+            <i class="fa-solid fa-heart heart__full"></i>
+            <i class="fa-regular fa-heart heart__empty"></i>
+          </div>
         </div>
       </a>
       <!-- Deusième carte "restaurant" -->
@@ -99,10 +103,14 @@
         />
 
         <div class="card__card-content">
-          <h3>La note enchantée</h3>
-          <span class="card__card-subtitle">La note enchantée</span
-          ><i class="fa-sharp fa-solid fa-heart fa-xl"></i>
-          <i class="fa-sharp fa-regular fa-heart fa-xl"></i>
+          <div class="card__card-text">
+            <h3>La note enchantée</h3>
+            <span class="card__card-subtitle">La note enchantée</span>
+          </div>
+          <div class="heart">
+            <i class="fa-solid fa-heart heart__full"></i>
+            <i class="fa-regular fa-heart heart__empty"></i>
+          </div>
         </div>
       </a>
 
@@ -113,10 +121,14 @@
           alt="Assiette garnie vu de biais posée sur une table."
         />
         <div class="card__card-content">
-          <h3>À la française</h3>
-          <span class="card__card-subtitle">Cité Rouge </span
-          ><i class="fa-sharp fa-solid fa-heart fa-xl"></i>
-          <i class="fa-sharp fa-regular fa-heart fa-xl"></i>
+          <div>
+            <h3>À la française</h3>
+            <span class="card__card-subtitle">Cité Rouge </span>
+          </div>
+          <div class="card__card-text">
+            <i class="fa-solid fa-heart heart__full"></i>
+            <i class="fa-regular fa-heart heart__empty"></i>
+          </div>
         </div>
       </a>
       <!-- Quatrième carte "restaurant" -->
@@ -126,10 +138,14 @@
           alt="Assiette en forme de tuile contenant un plat de poisson sur-élevée sur une autre assiette posée sur une table."
         />
         <div class="card__card-content">
-          <h3>Le délice des sens</h3>
-          <span class="card__card-subtitle">Folie-Méricourt</span
-          ><i class="fa-sharp fa-solid fa-heart fa-xl"></i>
-          <i class="fa-sharp fa-regular fa-heart fa-xl"></i>
+          <div class="card__card-text">
+            <h3>Le délice des sens</h3>
+            <span class="card__card-subtitle">Folie-Méricourt</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-heart heart__full"></i>
+            <i class="fa-regular fa-heart heart__empty"></i>
+          </div>
         </div>
       </a>
     </section>
