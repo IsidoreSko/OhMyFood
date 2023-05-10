@@ -125,15 +125,10 @@ h1 {
 .heart__full {
   opacity: 0;
   z-index: 1;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
-
-.heart__full:hover {
-  opacity: 1;
-  transform: opacity 250ms;
 }
 
 .New {
@@ -280,6 +275,10 @@ h1 {
   font-size: 16px;
   line-height: 19px;
 }
+.button-purple:hover {
+  background: linear-gradient(193.33deg, #ae80e5 -11.44%, #fface8 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
+}
 
 .rectangle-gray {
   width: 322px;
@@ -319,6 +318,53 @@ h1 {
 }
 .rectangle-gray .fa-store {
   color: #9356DC;
+}
+
+.loader {
+  height: 100vh;
+  width: 100%;
+  inset: 0;
+  position: fixed;
+  opacity: 0.9;
+  background-color: white;
+  z-index: 3;
+  animation: waiting 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes waiting {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.heart__full:hover {
+  animation: fill-up 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: 1;
+}
+
+@keyframes fill-up {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

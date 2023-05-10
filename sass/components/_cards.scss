@@ -51,16 +51,10 @@
  .heart__full {
     opacity: 0;
     z-index: 1;
-    background-image:linear-gradient(#ff79da ,#9356dc);
+    background-image: v.$button-purple-color;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-}
-
-
-.heart__full:hover  { 
-        opacity: 1;
-        transform: opacity 250ms; 
 }
 
 // Post-it "Nouveau"

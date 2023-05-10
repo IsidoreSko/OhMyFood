@@ -1,6 +1,6 @@
 @use "../utils/variable.scss" as v;
 
-// Généralités concernant le main-container de la page d'accueil:
+// Généralités concernant le main-container de la page d'accueil du site:
 
 .main-container {
     display: flex;
@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-// Généralités concernant le main-container de la page d'accueil:
+// Généralités concernant le main-container de la page d'accueil des restaurants:
 
 .new-main-container {
     display: flex;
