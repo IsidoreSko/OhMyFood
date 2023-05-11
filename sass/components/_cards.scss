@@ -36,7 +36,7 @@
 }
 }
 
-// Icone coeur:
+// Icone coeur dans les cartes de la page d'accueil:
 
 .card i {
     width: 25px;
@@ -55,6 +55,17 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+// Icone coeur pour la page des restaurants:
+
+.second-main i {
+    width: 25px;
+    height: 25px;
+    font-size: 1.5em;
+    position: absolute;
+    left: 85%;
+    margin-top: -55px;
 }
 
 // Post-it "Nouveau"
@@ -80,16 +91,32 @@
 
 .new-card {
     width: 90%;
-    height: 70%;
+    height: 69px;
     border-radius: 15px;
     background-color: white;
         &__card-content{
                 margin: 10px;
+                height: 100%;
         }
         &__card-subtitle {
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 17.6px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                
+                margin-bottom: 0px;
+                margin-top: 5px;
+        }
+        & h3 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            margin: 0px;
+        }
+        &__euro {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 17.6px;
         }
 }

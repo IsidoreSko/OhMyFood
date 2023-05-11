@@ -30,7 +30,7 @@
 @mixin style-loader {
     font-family:'Shrikhand' ;
     color: v.$primary-color;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 @keyframes wai {
@@ -44,7 +44,7 @@
 
  .m {
     @include style-loader;
-    animation: waiting 3s linear infinite;
+    animation: waiting 3s linear;
 }
 
 
@@ -87,13 +87,6 @@
 .m:nth-child(10) {
     animation-delay: 1s;
 }
-.m:nth-child(11) {
-    animation-delay: 1.1s;
-}
-.m:nth-child(12) {
-    animation-delay: 1.2s;
-}
-
 
 
 // Animation de l'icone coeur des cartes:
@@ -102,7 +95,6 @@
     &:hover {
             animation: fill-up 2000ms;
             animation-fill-mode: forwards;
-            animation-timing-function: 1;
     }
 }
 @keyframes fill-up {

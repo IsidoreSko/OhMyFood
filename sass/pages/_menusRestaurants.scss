@@ -1,0 +1,67 @@
+@use "../utils/variable.scss" as v;
+
+// Bouton "commander":
+
+.commander {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+}
+
+// Généralités concernant le main-container de la page d'accueil des restaurants:
+
+.new-main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    box-sizing: border-box;
+
+}
+
+
+// En ce qui concerne la section "main":
+
+.second-main {
+    background-color: v.$light-gray-color;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+    margin-top: 210px;
+    z-index: 1;
+        & h2 {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 18.7px;
+            text-transform: uppercase;
+            margin-left: 15px;
+            padding-bottom: 10px;
+            border-bottom: solid v.$third-color;
+            width: 40px;
+        }
+        & h1 {
+            padding-left: 15px;
+        }
+}
+
+// Comportement des images dans la page du restaurant:
+
+.image img {
+    object-fit: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 250px;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+.all-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

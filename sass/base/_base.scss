@@ -1,26 +1,5 @@
 @use "../utils/variable.scss" as v;
 
-// Généralités concernant le main-container de la page d'accueil du site:
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px;
-    background-color: white;
-    box-sizing: border-box;
-}
-
-// Généralités concernant le main-container de la page d'accueil des restaurants:
-
-.new-main-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px;
-    background-color: v.$light-gray-color;
-    box-sizing: border-box;
-}
 
 // Police d'écriture du site (+ taille...):
 
@@ -59,18 +38,6 @@ h1 {
     line-height: 41px;
 }
 
-// Background section "restaurants":
-
-.restaurants {
-    background-color: v.$light-gray-color;
-    width: 100%;
-    margin: 0px;
-    padding-bottom: 60px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
 
 // Conportement des images dans les cartes:
 
@@ -80,22 +47,3 @@ h1 {
     width: 100%;
     border-radius:20px 20px 0px 0px ;
 }
-
-// Comportement des images dans la page du restaurant:
-
-.image img {
-    object-fit: cover;
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 200px;
-    width: 100%;
-}
-
-.all-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
