@@ -34,6 +34,11 @@ h1 {
   margin-left: 10px;
   margin-bottom: 0px;
 }
+@media (min-width: 990px) {
+  .restaurants h2 {
+    margin-left: 8%;
+  }
+}
 
 .card {
   margin: 20px;
@@ -125,6 +130,7 @@ h1 {
 }
 @media (min-width: 990px) {
   .New {
+    position: absolute;
     left: 80%;
   }
 }
@@ -173,17 +179,61 @@ h1 {
   margin-bottom: 10px;
 }
 
+.all-footers__without-i {
+  margin-left: -10px;
+}
+@media (min-width: 990px) {
+  .all-footers__without-i {
+    margin: 5px;
+  }
+}
+@media (min-width: 990px) {
+  .all-footers__with-i {
+    margin-left: 5px;
+  }
+}
 .all-footers i {
   width: 14px;
   height: 16px;
 }
-
-.without-i {
-  margin-left: -10px;
+@media (min-width: 990px) {
+  .all-footers i {
+    margin: 5px;
+  }
+}
+@media (min-width: 990px) {
+  .all-footers__i {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 990px) {
+  .all-footers__ul {
+    margin-right: 30%;
+    width: 100%;
+  }
 }
 
 .like-a-logo {
   margin-left: 35px;
+}
+@media (min-width: 990px) {
+  .like-a-logo {
+    position: absolute;
+    left: 77%;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 990px) {
+  .all-footers, ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: last baseline;
+    height: 114px;
+  }
 }
 
 .all-headers {
@@ -278,11 +328,21 @@ h1 {
   background-color: #F6F6F6;
   height: 320px;
 }
+@media (min-width: 990px) {
+  .Info-Bar {
+    height: 260px;
+  }
+}
 
 .functioning h2 {
   margin-left: 10px;
   margin-top: 45px;
   margin-bottom: 30px;
+}
+@media (min-width: 990px) {
+  .functioning h2 {
+    margin-left: 8%;
+  }
 }
 
 .all-gray-rectangle {
@@ -464,7 +524,6 @@ h1 {
   animation: fill-up 2000ms;
   animation-fill-mode: forwards;
 }
-
 @keyframes fill-up {
   0% {
     opacity: 0;

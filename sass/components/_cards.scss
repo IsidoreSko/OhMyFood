@@ -6,6 +6,9 @@
 .restaurants h2 {
     margin-left: 10px;
     margin-bottom: 0px;
+    @media (min-width: 990px) {
+        margin-left: 8%;
+    }
 }
 
 // En ce qui concerne les cartes des restaurant pages d'accueil:
@@ -101,7 +104,9 @@
     left: 68%;
     margin-top: 15px;
     @media (min-width: 990px){
+        position: absolute;
         left: 80%;
+
     
     }
 }
