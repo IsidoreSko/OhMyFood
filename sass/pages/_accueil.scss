@@ -27,6 +27,20 @@
          margin: 20px;
     }
 
+// Ensemble des cartes:
+
+.restaurants-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: 990px){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+
 // Background section "restaurants":
 
 .restaurants {

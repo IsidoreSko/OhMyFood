@@ -30,13 +30,6 @@ h1 {
   line-height: 41px;
 }
 
-.card img {
-  object-fit: cover;
-  height: 70%;
-  width: 100%;
-  border-radius: 20px 20px 0px 0px;
-}
-
 .restaurants h2 {
   margin-left: 10px;
   margin-bottom: 0px;
@@ -50,8 +43,15 @@ h1 {
   flex-direction: column;
   border-radius: 20px;
   height: 251px;
+  width: 90%;
   text-decoration: none;
   color: black;
+}
+@media (min-width: 990px) {
+  .card {
+    width: 40%;
+    height: 280px;
+  }
 }
 .card__card-content {
   margin-left: 15px;
@@ -67,7 +67,12 @@ h1 {
   font-size: 17px;
   line-height: 20px;
 }
-
+.card img {
+  object-fit: cover;
+  height: 70%;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
 .card i {
   width: 25px;
   height: 25px;
@@ -75,6 +80,13 @@ h1 {
   position: absolute;
   left: 80%;
   margin-top: -40px;
+}
+@media (min-width: 990px) {
+  .card i {
+    left: 80%;
+    bottom: 30px;
+    position: relative;
+  }
 }
 
 .heart__full {
@@ -110,6 +122,11 @@ h1 {
   position: absolute;
   left: 68%;
   margin-top: 15px;
+}
+@media (min-width: 990px) {
+  .New {
+    left: 80%;
+  }
 }
 
 .new-card {
@@ -187,9 +204,10 @@ h1 {
   width: 17px;
   height: 16px;
   color: #353535;
+  font-size: 20px;
   position: absolute;
   left: 7%;
-  margin-top: 25px;
+  margin-top: -5px;
 }
 
 .main-container {
@@ -212,6 +230,20 @@ h1 {
 
 .fa-location-dot {
   margin: 20px;
+}
+
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 990px) {
+  .restaurants-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .restaurants {
@@ -269,6 +301,7 @@ h1 {
   border: none;
   text-decoration: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
@@ -282,7 +315,7 @@ h1 {
 }
 
 .rectangle-gray {
-  width: 322px;
+  width: 90%;
   height: 72px;
   border-radius: 20px;
   background-color: #F6F6F6;
@@ -293,8 +326,14 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 990px) {
+  .rectangle-gray {
+    width: 25%;
+  }
+}
 .rectangle-gray__number {
-  transform: translate(-230%);
+  position: absolute;
+  left: 2%;
   border-radius: 50%;
   background-color: #9356DC;
   display: flex;
@@ -303,6 +342,12 @@ h1 {
   color: white;
   width: 24px;
   height: 24px;
+}
+@media (min-width: 990px) {
+  .rectangle-gray__number {
+    position: relative;
+    left: -8%;
+  }
 }
 .rectangle-gray__text {
   width: 177.2px;
@@ -319,6 +364,15 @@ h1 {
 }
 .rectangle-gray .fa-store {
   color: #9356DC;
+}
+
+@media (min-width: 990px) {
+  .all-gray-rectangle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5%;
+  }
 }
 
 .loader {

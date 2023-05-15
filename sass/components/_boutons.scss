@@ -11,6 +11,7 @@
     border: none;
     text-decoration: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
@@ -21,12 +22,13 @@
             background:v.$button-purple-color2;
             box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
         }
+   
 }    
 
 // Rectangle gris:
 
 .rectangle-gray {
-    width: 322px;
+    width: 90%;
     height: 72px;
     border-radius: 20px;
     background-color: v.$light-gray-color;
@@ -36,9 +38,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    @media (min-width: 990px) {
+        width: 25%;
+  }
     // Pastille ronde avec le numéro:
         &__number {
-    transform: translate(-230%);
+    position: absolute;
+    left:2%;
     border-radius: 50%;
     background-color: v.$primary-color;
     display: flex;
@@ -47,6 +53,10 @@
     color: white;
     width: 24px;
     height: 24px;
+    @media (min-width: 990px){
+        position: relative;
+        left: -8%;
+  }
 }
     // Texte dans le rectangle :
         &__text {
@@ -69,3 +79,12 @@
 }
 }
 
+.all-gray-rectangle {
+        @media (min-width: 990px){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2.5%;
+       
+  }
+}

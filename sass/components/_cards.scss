@@ -18,8 +18,13 @@
     flex-direction: column;
     border-radius: 20px;
     height: 251px;
+    width: 90%;
     text-decoration: none;
     color: black;
+    @media (min-width: 990px){
+        width: 40%;
+        height: 280px;
+    }
         &__card-content {
          margin-left: 15px;
 }
@@ -33,18 +38,28 @@
         font-weight: 300;
         font-size: 17px;
         line-height: 20px;
+}       
+// Conportement des images dans les cartes:
+        & img {
+         object-fit: cover;
+         height: 70%;
+         width: 100%;
+         border-radius:20px 20px 0px 0px ;
 }
-}
-
-// Icone coeur dans les cartes de la page d'accueil:
-
-.card i {
-    width: 25px;
-    height: 25px;
-    font-size: 1.5em;
-    position: absolute;
-    left: 80%;
-    margin-top: -40px;
+ // Icone coeur dans les cartes de la page d'accueil:
+            & i {
+         width: 25px;
+         height: 25px;
+         font-size: 1.5em;
+         position: absolute;
+         left: 80%;
+         margin-top: -40px;
+         @media (min-width: 990px){
+            left: 80%;
+            bottom: 30px;
+            position: relative;
+         }
+} 
 }
 
 
@@ -85,6 +100,10 @@
     position: absolute;
     left: 68%;
     margin-top: 15px;
+    @media (min-width: 990px){
+        left: 80%;
+    
+    }
 }
 
 // En ce qui concerne les cartes des menus des restaurants:
@@ -120,3 +139,4 @@
             line-height: 17.6px;
         }
 }
+
