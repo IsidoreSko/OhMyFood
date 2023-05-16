@@ -1,7 +1,7 @@
 @use "../utils/variable.scss" as v;
 
 
-// Le laoder:
+// Animation du page laoder:
 
 .loader {
     height: 100vh;
@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
     transition: 3s ease-in-out;
         &__name {
             font-family:'Shrikhand' ;
@@ -24,13 +25,6 @@
             font-size: 35px;
         }
 }       
-
-
-@mixin style-loader {
-    font-family:'Shrikhand' ;
-    color: v.$primary-color;
-    font-size: 30px;
-}
 
 @keyframes wai {
     80% {
@@ -42,7 +36,9 @@
 }
 
  .m {
-    @include style-loader;
+    font-family:'Shrikhand' ;
+    color: v.$primary-color;
+    font-size: 30px;
     animation: waiting 3s linear;
 }
 
@@ -92,7 +88,7 @@
 
 .heart__full {
     &:hover {
-            animation: fill-up 2000ms;
+            animation: fill-up 900ms;
             animation-fill-mode: forwards;
 }
 }
@@ -116,4 +112,46 @@
     100% {
         opacity: 1;
     }
-} 
+}
+
+// Coche qui coulisse sur les plats du menus:
+
+.slide-left {
+	-webkit-animation: slide-left 0.5s ;
+	        animation: slide-left 0.5s ;
+}
+    
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+              opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(-110%);
+              transform: translateX(-110%);
+              opacity: 1;
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+              opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(-110%);
+              transform: translateX(-110%);
+              opacity: 1;
+    }
+  }
+
+.new-card {
+    &:hover { .new-card__i {
+            visibility: visible;
+            animation: slide-left 2000ms;
+            animation-fill-mode: forwards;
+    }          
+}
+}

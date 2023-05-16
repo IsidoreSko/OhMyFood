@@ -78,7 +78,7 @@
 
 // Icone coeur pour la page des restaurants:
 
-.second-main i {
+.hearts i {
     width: 25px;
     height: 25px;
     font-size: 1.5em;
@@ -117,6 +117,9 @@
     height: 69px;
     border-radius: 15px;
     background-color: white;
+    color: black;
+    text-decoration: none;
+    position: relative;
         &__card-content{
                 margin: 10px;
                 height: 100%;
@@ -125,22 +128,56 @@
                 font-weight: 300;
                 font-size: 15px;
                 line-height: 17.6px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
                 margin-bottom: 0px;
                 margin-top: 5px;
+                margin-right: 20px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
         }
-        & h3 {
+        &__card-title {
             font-weight: 500;
             font-size: 18px;
             line-height: 21px;
             margin: 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &__euro {
             font-weight: 700;
             font-size: 15px;
             line-height: 17.6px;
+            width: 20px;
+            height: 20px;
+            padding-left: 20px;
+            position: absolute;
+            left: 85%;
+            top: 50%;
+        }
+        &__i{
+            visibility: hidden;
+            position: absolute;
+            left: 100%;
+            bottom: 0px;
+            color: blanchedalmond;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 32px;
+            padding-left: 63px;
+            padding-right: 30px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background:  v.$button-purple-color;
+            width: 25px;
+            height: 25px;
+            font-size: 1.5em;
+            margin-left: 10px;
+           
+            // margin-top: -20px;
         }
 }
 
