@@ -56,6 +56,7 @@ h1 {
   .card {
     width: 40%;
     height: 280px;
+    position: relative;
   }
 }
 .card__card-content {
@@ -90,7 +91,7 @@ h1 {
   .card i {
     left: 80%;
     bottom: 30px;
-    position: relative;
+    position: absolute;
   }
 }
 
@@ -131,7 +132,7 @@ h1 {
 @media (min-width: 990px) {
   .New {
     position: absolute;
-    left: 80%;
+    left: 75%;
   }
 }
 
@@ -171,7 +172,9 @@ h1 {
   background-color: #353535;
 }
 
-.all-footers h4, .all-footers a, .all-footers li {
+.all-footers h4,
+.all-footers a,
+.all-footers li {
   text-decoration: none;
   list-style: none;
   color: white;
@@ -202,21 +205,19 @@ h1 {
   }
 }
 @media (min-width: 990px) {
-  .all-footers__i {
-    display: flex;
-    flex-direction: row;
-    margin-right: 50px;
+  .all-footers__margin-li {
+    margin-left: 30px;
   }
 }
 @media (min-width: 990px) {
   .all-footers__ul {
-    margin-right: 30%;
+    margin-right: 20%;
     width: 100%;
   }
 }
 
 .like-a-logo {
-  margin-left: 35px;
+  margin-left: 8%;
 }
 @media (min-width: 990px) {
   .like-a-logo {
@@ -227,7 +228,8 @@ h1 {
 }
 
 @media (min-width: 990px) {
-  .all-footers, ul {
+  .all-footers,
+  ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -524,6 +526,7 @@ h1 {
   animation: fill-up 2000ms;
   animation-fill-mode: forwards;
 }
+
 @keyframes fill-up {
   0% {
     opacity: 0;
