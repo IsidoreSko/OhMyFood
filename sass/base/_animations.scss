@@ -119,6 +119,7 @@
 .slide-left {
 	-webkit-animation: slide-left 0.5s ;
 	        animation: slide-left 0.5s ;
+            animation-fill-mode: forwards;
 }
     
 @-webkit-keyframes slide-left {
@@ -150,8 +151,11 @@
 .new-card {
     &:hover { .new-card__i {
             visibility: visible;
-            animation: slide-left 2000ms;
-            animation-fill-mode: forwards;
+            animation: slide-left 2000ms forwards;
+            // animation-fill-mode: ;
     }          
 }
 }
+
+// Décalage d'apparition des menus:
+

@@ -1,5 +1,4 @@
 @use "../utils/variable.scss" as v;
-// @use "../utils/mixins.scss" as v;
 
 // Au sujet du footer:
 
@@ -23,18 +22,15 @@
 .all-footers {
     &__without-i {
         margin-left: -10px;
-
         @media (min-width: 990px) {
             margin: 5px;
         }
     }
-
     @media (min-width: 990px) {
         &__with-i {
             margin-left: 5px;
         }
     }
-
     & i {
         width: 14px;
         height: 16px;
@@ -43,13 +39,11 @@
             margin: 5px;
         }
     }
-
     @media (min-width: 990px) {
         &__margin-li {
             margin-left: 30px;
         }
     }
-
     @media (min-width: 990px) {
         &__ul {
             margin-right: 20%;
