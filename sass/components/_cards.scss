@@ -83,8 +83,11 @@
     height: 25px;
     font-size: 1.5em;
     position: absolute;
-    left: 63%;
+    left: 90%;
     margin-top: -55px;
+    @media (min-width: 990px){
+        margin-left: -230px;
+    }
 }
 
 // Post-it "Nouveau"
@@ -118,77 +121,58 @@
     border-radius: 15px;
     background-color: white;
     color: black;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     text-decoration: none;
-    // position: relative;
-        &__card-content{
-                margin: 10px;
-                height: 100%;
-        }
-        &__card-subtitle {
-                font-weight: 300;
-                font-size: 15px;
-                line-height: 17.6px;
-                margin-bottom: 0px;
-                margin-top: 5px;
-                margin-right: 20px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                // width: 100%;
-        }
-        &__card-title {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 21px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
+        &__content {
             margin: 0px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            // display: block;
-            // margin-block-start: 1em;
-            // margin-block-end: 1em;
-            // margin-inline-start: 0px;
-            // margin-inline-end: 0px;
+        }
+        &__card-title {
+            margin: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+        &__card-subtitle {
+            margin: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
         }
         &__euro {
-            font-weight: 700;
-            font-size: 15px;
-            line-height: 17.6px;
-            // width: 20px;
-            // height: 20px;
-            margin-left: 20px;
-            // position: absolute;
-            // left: 85%;
-            // top: 50%;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: 7px;
+            display: flex;
+            align-items: flex-end;
         }
         &__i{
-            visibility: hidden;
-            position: relative;
-            // overflow: hidden;
-            // position: relative;
-            left: 100%;
-            top: -60px;
-            color: blanchedalmond;
+            color:white;
             display: flex;
-            flex-direction: row;
+            flex-shrink: 0;
             justify-content: right;
             align-items: center;
             padding-top: 40px;
-            padding-bottom: 32px;
-            padding-left: 63px;
-            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-left: 45px;
+            padding-right: 15px;
+            margin-left: 5px;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
-            background:  v.$button-purple-color;
+            background:  v.$third-color;
             width: 25px;
             height: 25px;
             font-size: 1.5em;
-            margin-left: 10px;
-            // z-index: 1;
-            // margin-top: -20px;
+            margin-right: -4.1rem;
+            transition: all 1500ms;
         }
 }
-
