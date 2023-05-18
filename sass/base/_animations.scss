@@ -79,9 +79,6 @@
 .m:nth-child(9) {
     animation-delay: 0.9s;
 }
-.m:nth-child(10) {
-    animation-delay: 1s;
-}
 
 
 // Animation de l'icone coeur des cartes:
@@ -114,49 +111,60 @@
     }
 }
 
-// Coche qui coulisse sur les plats du menus:
-
-// .slide-left {
-// 	-webkit-animation: slide-left 0.5s ;
-// 	        animation: slide-left 0.5s ;
-//             animation-fill-mode: forwards;
-// }
-    
-// @-webkit-keyframes slide-left {
-//     0% {
-//       -webkit-transform: translateX(0);
-//               transform: translateX(0);
-//               margin-left: 4.1rem;
-//     }
-//     100% {
-//       -webkit-transform: translateX(-110%);
-//               transform: translateX(-110%);
-//               margin-left: 0rem;
-//     }
-//   }
-
-//   @keyframes slide-left {
-//     0% {
-//       -webkit-transform: translateX(0);
-//               transform: translateX(0);
-//               margin-left: 4.1rem;
-//     }
-//     100% {
-//       -webkit-transform: translateX(-110%);
-//               transform: translateX(-110%);
-//               margin-left: 0rem;
-//     }
-//   }
 
 .new-card {
     &:hover { .new-card__i {
-            // visibility: visible;
             margin-right: 0rem;
-            // animation: slide-left 2000ms forwards;
     } 
   }       
 }
 
 
 // Décalage d'apparition des menus:
+
+@keyframes appearance {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes presence {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.starters {
+    animation: appearance 1s;
+    animation: presence 1.5s;
+}
+
+.dishes {
+    animation: appearance 2s;
+    animation: presence 3s;
+}
+
+.desserts {
+    animation: appearance 3s;
+    animation: presence 4s;
+}
 
