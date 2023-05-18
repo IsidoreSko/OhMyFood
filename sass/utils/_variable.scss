@@ -13,5 +13,5 @@ $light-gray-color: #F6F6F6;
 $anthracite-color : #353535;
 $green-color: #008766;
 $light-green-color: #99E2D0;
-$button-purple-color: linear-gradient(0.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-$button-purple-color2:linear-gradient(0.33deg, lighten(#9356DC, 5%) -11.44%, lighten(#FF79DA, 5%) 123.93%);
+$button-purple-color: linear-gradient(0.33deg,$primary-color -11.44%,$secondery-color 123.93%);
+$button-purple-color2:linear-gradient(lighten($primary-color, 5%) , lighten($secondery-color, 5%));
