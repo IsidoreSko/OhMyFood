@@ -53,10 +53,18 @@
     color: white;
     width: 24px;
     height: 24px;
-    @media (min-width: 1024px){
+     @media (min-width: 767px){
+        position: absolute;
+        left: 17%;
+     }
+      @media (min-width: 1024px){
         position: relative;
-        left: -8%;
-  }
+        left: -14%;
+    }
+    @media (min-width: 1200px){
+        position: relative;
+        left: -18%;
+    }
 }
     // Texte dans le rectangle :
         &__text {
@@ -84,7 +92,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 2.5%;
+        gap: 4.5%;
        
   }
 }

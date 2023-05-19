@@ -30,9 +30,29 @@ h1 {
   line-height: 41px;
 }
 
+@media (min-width: 767px) {
+  .functioning {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .functioning {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .restaurants h2 {
   margin-left: 10px;
   margin-bottom: 0px;
+}
+@media (min-width: 767px) {
+  .restaurants h2 {
+    margin-left: 16%;
+  }
 }
 @media (min-width: 1024px) {
   .restaurants h2 {
@@ -47,10 +67,17 @@ h1 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  height: 251px;
+  height: 265px;
   width: 90%;
   text-decoration: none;
   color: black;
+}
+@media (min-width: 767px) {
+  .card {
+    height: 265px;
+    width: 70%;
+    position: relative;
+  }
 }
 @media (min-width: 1024px) {
   .card {
@@ -87,18 +114,16 @@ h1 {
   left: 80%;
   margin-top: -40px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   .card i {
-    left: 80%;
-    bottom: 30px;
-    position: absolute;
+    left: 70%;
   }
 }
 
 .heart__full {
   opacity: 0;
   z-index: 1;
-  background-image: linear-gradient(0.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-image: linear-gradient(to left top, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -109,12 +134,11 @@ h1 {
   height: 25px;
   font-size: 1.5em;
   position: absolute;
-  left: 90%;
-  margin-top: -55px;
+  left: 85%;
 }
 @media (min-width: 1024px) {
   .hearts i {
-    margin-left: -230px;
+    margin-left: 0px;
   }
 }
 
@@ -133,6 +157,12 @@ h1 {
   position: absolute;
   left: 68%;
   margin-top: 15px;
+}
+@media (min-width: 767px) {
+  .New {
+    left: 80%;
+    position: absolute;
+  }
 }
 @media (min-width: 1024px) {
   .New {
@@ -319,6 +349,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1024px) {
   .restaurants-cards {
@@ -337,7 +368,6 @@ h1 {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .Info-Bar .title {
@@ -389,7 +419,7 @@ h1 {
   width: 218px;
   height: 50px;
   border-radius: 25px;
-  background: linear-gradient(0.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: none;
   text-decoration: none;
@@ -403,7 +433,7 @@ h1 {
   line-height: 19px;
 }
 .button-purple:hover {
-  background: linear-gradient(#a16be0, #ff93e1);
+  background: linear-gradient(to left top, #a16be0, #ff93e1);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
 }
 
@@ -436,10 +466,22 @@ h1 {
   width: 24px;
   height: 24px;
 }
+@media (min-width: 767px) {
+  .rectangle-gray__number {
+    position: absolute;
+    left: 17%;
+  }
+}
 @media (min-width: 1024px) {
   .rectangle-gray__number {
     position: relative;
-    left: -8%;
+    left: -14%;
+  }
+}
+@media (min-width: 1200px) {
+  .rectangle-gray__number {
+    position: relative;
+    left: -18%;
   }
 }
 .rectangle-gray__text {
@@ -464,7 +506,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2.5%;
+    gap: 4.5%;
   }
 }
 
