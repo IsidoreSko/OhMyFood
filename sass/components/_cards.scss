@@ -26,15 +26,19 @@
     @media (min-width: 1200px){
         height: 340px;
     }
+// Concernant le contenu:
         &__card-content {
          margin-left: 15px;
 }
+// Concernant le texte:
         &_card-text {
             width: 70%;
         }
+// Au sujet du titre:
         & h3 {
         margin-bottom: 5px;
 }
+// Au sujet du sous-titre:
         &__card-subtitle {
         font-weight: 300;
         font-size: 17px;
@@ -115,25 +119,31 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    @media (min-width: 1024px) {
+        width: 120%;
+    }
+// Concernant le contenu:
         &__card-content {
             margin: 0px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
+// Concernant le titre:
         &__card-title {
             margin: 10px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;        
         }
+// Concernant le sous-titre:
         &__card-subtitle {
             margin: 10px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-
         }
+// Au sujet du prix:
         &__euro {
             margin-bottom: 10px;
             margin-left: auto;
@@ -141,6 +151,7 @@
             display: flex;
             align-items: flex-end;
         }
+// Au sujet de la coche qui apparait au survol:
         &__i{
             color:white;
             display: flex;
@@ -161,11 +172,11 @@
             margin-right: -4.1rem;
 // Animation de la coche qui apparait au sruvol:
             transition: all 1500ms;
-        &:hover { .new-card__i {
-                margin-right: 0rem;
-                } 
-            }       
         }
+    &:hover { .new-card__i {
+        margin-right: 0rem;
+        } 
+    }
 }
 
 // Comportement du l'icône coeur dans la page des restaurants:
@@ -181,4 +192,4 @@
     margin-left: -20%;
     margin-top: -50px;
     }
- }           
+}

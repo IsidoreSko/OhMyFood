@@ -23,11 +23,102 @@
     background-color: v.$gray-second-color;
 }
 
+// Concernant l'icône localisation:
+
 .fa-location-dot {
          margin: 20px;
     }
 
-// Ensemble des cartes:
+// Section "Info-Bar":
+
+.Info-Bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: v.$light-gray-color;
+    height: 320px;
+    @media (min-width: 1024px) {
+        height: 260px;
+    }
+// Concernant le titre:
+    & .title {
+    text-align: center;
+    margin-top: 40px;
+    width: 70%;
+    }
+// Concernant le texte:
+    & p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    }
+}
+
+
+// Titre de la section "Fonctionnement":
+
+.functioning {
+    @media (min-width: 767px){
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (min-width: 1024px) {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+   & h2 {
+    margin-left: 17px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    @media (min-width: 1024px){
+        margin-left: 8%;
+    }
+}
+}
+// Section des rectangles gris:
+
+.all-gray-rectangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+// Changement de position des rectangles gris:  
+  @media (min-width: 1024px){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4.5%;   
+}
+}
+
+// Au sujet de la section "restaurants":
+
+.restaurants {
+    background-color: v.$light-gray-color;
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+// Titre de la section restaurant:    
+    & h2 {
+        margin-left: 17px;
+        margin-bottom: 0px;
+        @media (min-width: 767px) {
+            margin-left: 16%;
+        }
+        @media (min-width: 1024px) {
+            margin-left: 8%;
+        }
+}
+}
+
+// Ensemble des cartes restaurants:
 
 .restaurants-cards {
     display: flex;
@@ -42,107 +133,5 @@
 }
 }
 
-// Titre de la section restaurant:
 
-.restaurants h2 {
-    margin-left: 10px;
-    margin-bottom: 0px;
-    @media (min-width: 767px) {
-        margin-left: 16%;
-    }
-    @media (min-width: 1024px) {
-        margin-left: 8%;
-    }
-
-}
-
-// Background section "restaurants":
-
-.restaurants {
-    background-color: v.$light-gray-color;
-    width: 100%;
-    margin: 0px;
-    padding-bottom: 60px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    // flex-wrap: wrap;
-    // justify-content: center;
-}
-
-// Section "Info-Bar":
-
-.Info-Bar .title {
-    text-align: center;
-    margin-top: 40px;
-    width: 70%;
-}
-
-.Info-Bar p {
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.Info-Bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: v.$light-gray-color;
-    height: 320px;
-    @media (min-width: 1024px) {
-        height: 260px;
-    }
-}
-
-
-// Titre de la section "Fonctionnement":
-
-.functioning h2 {
-    margin-left: 10px;
-    margin-top: 45px;
-    margin-bottom: 30px;
-    @media (min-width: 1024px){
-        margin-left: 8%;
-    }
-}
-
-// Section des rectangles gris:
-
-.all-gray-rectangle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-// Comportement des section "function"et "restaurant" pour le responsive:
-
-.functioning {
-    @media (min-width: 767px){
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    @media (min-width: 1024px) {
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }     
-
-// Changement de position des rectangles gris de la section functioning:
-
-.all-gray-rectangle {
-    @media (min-width: 1024px){
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 4.5%;
-   
-}
-}
 

@@ -10,11 +10,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  // Au sujet du logo:
   & img {
     width: 162px;
     height: 44px;
     margin-top: 15px;
   }
+  // Au sujet du l'icône "fléche" des pages restauarant pour retourner à la page d'accueil:
      & i {
       width: 17px;
       height: 16px;

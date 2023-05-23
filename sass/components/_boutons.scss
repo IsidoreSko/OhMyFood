@@ -28,7 +28,7 @@
 // Rectangle gris:
 
 .rectangle-gray {
-    width: 90%;
+    width: 85%;
     height: 72px;
     border-radius: 20px;
     background-color: v.$light-gray-color;
@@ -44,7 +44,7 @@
 // Pastille avec le numéro:
         &__number {
     position: absolute;
-    left:2%;
+    left:5%;
     border-radius: 50%;
     background-color: v.$primary-color;
     display: flex;
@@ -55,14 +55,13 @@
     height: 24px;
      @media (min-width: 767px){
         position: absolute;
-        left: 17%;
+        left: 14%;
      }
       @media (min-width: 1024px){
         position: relative;
         left: -14%;
     }
     @media (min-width: 1200px){
-        position: relative;
         left: -18%;
     }
 }

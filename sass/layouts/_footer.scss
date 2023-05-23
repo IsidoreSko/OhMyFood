@@ -20,36 +20,44 @@ li {
 
 // Dispositions des éléments du footer:
 
-.all-footers {
+.all-footers {   
     @media (min-width: 1024px){
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: last baseline;
     height: 114px;}
+// Comportement des liens sans icône:
         &__without-i {
             margin-left: -10px;
             @media (min-width: 1024px) {
             margin: 5px;
             }
         }
+// Comportement des liens avec icône:
         @media (min-width: 1024px) {
             &__with-i {
                 margin-left: 5px;
             }
         }
+// Comportement des icônes:
         & i {
+            font-size: small;
+            margin-left: -7px;
+            margin-right: 5px;
             width: 14px;
             height: 16px;
             @media (min-width: 1024px) {
                 margin: 5px;
             }
         }
+// Marge gauche du troisième lien:
         @media (min-width: 1024px) {
             &__margin-li {
                 margin-left: 30px;
             }
         }
+// Au sujet de la liste:
         @media (min-width: 1024px) {
             &__ul {
                 margin-right: 20%;
@@ -61,12 +69,18 @@ li {
                 height: 114px;
             }
         }
-         &__like-a-logo{
-            margin-left: 8%;
-         @media (min-width: 1024px){
+// Positionement du titre logo:
+        & h4 {
+            font-family: 'Shrikhand';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            margin-left: 35px;
+         @media (min-width: 1024px) {
                 position: absolute;
-                left: 77%;
+                left: 83%;
                 padding-bottom: 20px;
                 }
         }
     }
+
