@@ -1,7 +1,7 @@
 @use "../utils/variable.scss" as v;
 
 
-// Généralités concernant le main-container de la page d'accueil du site:
+// Généralités concernant le main-container de la page d'accueil du site::::::::::::::::::::::::::::::::::::::::::::::::
 
 .main-container {
     display: flex;
@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 
-// Section "Localisation-Bar":
+// Section "Localisation-Bar":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .Localisation-Bar {
     display: flex;
@@ -29,7 +29,7 @@
          margin: 20px;
     }
 
-// Section "Info-Bar":
+// Section "Info-Bar":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .Info-Bar {
     display: flex;
@@ -57,7 +57,7 @@
 }
 
 
-// Titre de la section "Fonctionnement":
+// Titre de la section "Fonctionnement":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .functioning {
     @media (min-width: 767px){
@@ -79,7 +79,7 @@
     }
 }
 }
-// Section des rectangles gris:
+// Section des rectangles gris:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .all-gray-rectangle {
     display: flex;
@@ -95,7 +95,69 @@
 }
 }
 
-// Au sujet de la section "restaurants":
+// Concernant les rectangles gris:
+
+.rectangle-gray {
+    width: 85%;
+    height: 72px;
+    border-radius: 20px;
+    background-color: v.$light-gray-color;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 1024px) {
+        width: 25%;
+  }
+// Pastille avec le numéro:
+        &__number {
+    position: absolute;
+    left:5%;
+    border-radius: 50%;
+    background-color: v.$primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 24px;
+    height: 24px;
+     @media (min-width: 767px){
+        position: absolute;
+        left: 14%;
+     }
+      @media (min-width: 1024px){
+        position: relative;
+        left: -14%;
+    }
+    @media (min-width: 1200px){
+        left: -18%;
+    }
+}
+// Texte dans le rectangle :
+        &__text {
+    width: 177.2px;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+} 
+// Concernant les icone:
+        &__i {
+    color: v.$gray-third-color;
+    margin-right: 5%;
+    padding: 0px;
+    width: 16px;
+    height: 16px;
+}
+// Couleur de l'icone "store":
+    & .fa-store {
+        color: v.$primary-color;
+}
+}
+
+
+// Au sujet de la section "restaurants":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .restaurants {
     background-color: v.$light-gray-color;

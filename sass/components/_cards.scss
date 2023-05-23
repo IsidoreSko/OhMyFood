@@ -5,6 +5,7 @@
 .card {
     margin: 20px;
     margin-bottom: 0px;
+    padding-left: 0px;
     background-color: white;
     display:flex;
     flex-direction: column;
@@ -22,9 +23,6 @@
         width: 40%;
         height: 280px;
         position: relative;
-    }
-    @media (min-width: 1200px){
-        height: 340px;
     }
 // Concernant le contenu:
         &__card-content {

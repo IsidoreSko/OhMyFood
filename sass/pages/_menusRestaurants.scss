@@ -1,15 +1,5 @@
 @use "../utils/variable.scss" as v;
 
-// Bouton "commander":
-
-.commander {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 35px;
-}
-
 // Généralités concernant le main-container de la page d'accueil des restaurants:
 
 .new-main-container {
@@ -22,7 +12,7 @@
 
 }
 
-// En ce qui concerne la section "main":
+// A propos de la section "main":
 
 .second-main {
     background-color: v.$light-gray-color;
@@ -60,6 +50,16 @@
             margin-top: 35px;
         }
     }
+}
+
+// Au sujet du bouton "commander":
+
+.commander {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
 }
 
 // En ce qui concerne la section "menu":

@@ -3,7 +3,7 @@
 @use "utils/variable";
 @use "layouts/footer";
 @use "layouts/header";
-@use "pages/accueil";
+@use "pages/accueilSite";
 @use "components/boutons";
 @use "base/animations";
-@use "pages/menusRestaurants";
+@use "pages/menusRestaurants.scss";
