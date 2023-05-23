@@ -18,11 +18,11 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+// Animation au survol:
         &:hover{
             background:v.$button-purple-color2;
             box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
-        }
-   
+        }   
 }    
 
 // Rectangle gris:
@@ -41,7 +41,7 @@
     @media (min-width: 1024px) {
         width: 25%;
   }
-    // Pastille ronde avec le numéro:
+// Pastille avec le numéro:
         &__number {
     position: absolute;
     left:2%;
@@ -66,14 +66,14 @@
         left: -18%;
     }
 }
-    // Texte dans le rectangle :
+// Texte dans le rectangle :
         &__text {
     width: 177.2px;
     color: black;
     font-weight: 500;
     font-size: 16px;
 } 
-    // Concernant les icone:
+// Concernant les icone:
         &__i {
     color: v.$gray-third-color;
     margin-right: 5%;
@@ -87,12 +87,3 @@
 }
 }
 
-.all-gray-rectangle {
-        @media (min-width: 1024px){
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 4.5%;
-       
-  }
-}

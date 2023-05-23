@@ -3,11 +3,11 @@
   box-sizing: border-box;
 }
 
-.Info-Bar h1, h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+h1 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
 }
 
 h3 {
@@ -23,41 +23,11 @@ h3 {
   line-height: 26px;
 }
 
-h1 {
-  font-family: "Shrikhand";
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 41px;
-}
-
-@media (min-width: 767px) {
-  .functioning {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (min-width: 1024px) {
-  .functioning {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.restaurants h2 {
-  margin-left: 10px;
-  margin-bottom: 0px;
-}
-@media (min-width: 767px) {
-  .restaurants h2 {
-    margin-left: 16%;
-  }
-}
-@media (min-width: 1024px) {
-  .restaurants h2 {
-    margin-left: 8%;
-  }
+.Info-Bar h1, h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .card {
@@ -84,6 +54,11 @@ h1 {
     width: 40%;
     height: 280px;
     position: relative;
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    height: 340px;
   }
 }
 .card__card-content {
@@ -220,6 +195,9 @@ h1 {
   margin-right: -4.1rem;
   transition: all 1500ms;
 }
+.new-card__i:hover .new-card__i {
+  margin-right: 0rem;
+}
 
 .hearts i {
   width: 25px;
@@ -241,8 +219,8 @@ h1 {
 }
 
 .all-footers h4,
-.all-footers a,
-.all-footers li {
+a,
+li {
   text-decoration: none;
   list-style: none;
   color: white;
@@ -250,6 +228,15 @@ h1 {
   margin-bottom: 10px;
 }
 
+@media (min-width: 1024px) {
+  .all-footers {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: last baseline;
+    height: 114px;
+  }
+}
 .all-footers__without-i {
   margin-left: -10px;
 }
@@ -281,28 +268,21 @@ h1 {
   .all-footers__ul {
     margin-right: 20%;
     width: 100%;
-  }
-}
-
-.like-a-logo {
-  margin-left: 8%;
-}
-@media (min-width: 1024px) {
-  .like-a-logo {
-    position: absolute;
-    left: 77%;
-    padding-bottom: 20px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .all-footers,
-  ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: last baseline;
     height: 114px;
+  }
+}
+.all-footers__like-a-logo {
+  margin-left: 8%;
+}
+@media (min-width: 1024px) {
+  .all-footers__like-a-logo {
+    position: absolute;
+    left: 77%;
+    padding-bottom: 20px;
   }
 }
 
@@ -367,6 +347,21 @@ h1 {
   }
 }
 
+.restaurants h2 {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+@media (min-width: 767px) {
+  .restaurants h2 {
+    margin-left: 16%;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants h2 {
+    margin-left: 8%;
+  }
+}
+
 .restaurants {
   background-color: #F6F6F6;
   width: 100%;
@@ -420,6 +415,30 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 767px) {
+  .functioning {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .functioning {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .all-gray-rectangle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4.5%;
+  }
 }
 
 .button-purple {
@@ -508,15 +527,6 @@ h1 {
   color: #9356DC;
 }
 
-@media (min-width: 1024px) {
-  .all-gray-rectangle {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 4.5%;
-  }
-}
-
 .loader {
   height: 100vh;
   width: 100%;
@@ -524,14 +534,14 @@ h1 {
   opacity: 0.9;
   background-color: #F6F6F6;
   z-index: 1;
-  animation: wai 3s;
-  animation-fill-mode: both;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
+  animation: wai 3s;
+  animation-fill-mode: both;
   transition: 3s ease-in-out;
 }
 .loader__name {
@@ -624,10 +634,6 @@ h1 {
     opacity: 1;
   }
 }
-.new-card:hover .new-card__i {
-  margin-right: 0rem;
-}
-
 @keyframes appearance {
   0% {
     opacity: 0;

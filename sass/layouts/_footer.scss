@@ -1,16 +1,16 @@
 @use "../utils/variable.scss" as v;
 
-// Au sujet du footer:
+// Background du footer:
 
 .all-footers {
     background-color: v.$anthracite-color;
 }
 
-// En ce qui concerne les textes:
+// En ce qui concerne les textes du footer:
 
 .all-footers h4,
-.all-footers a,
-.all-footers li {
+a,
+li {
     text-decoration: none;
     list-style: none;
     color: white;
@@ -18,57 +18,55 @@
     margin-bottom: 10px;
 }
 
+// Dispositions des éléments du footer:
 
 .all-footers {
-    &__without-i {
-        margin-left: -10px;
-        @media (min-width: 1024px) {
-            margin: 5px;
-        }
-    }
-    @media (min-width: 1024px) {
-        &__with-i {
-            margin-left: 5px;
-        }
-    }
-    & i {
-        width: 14px;
-        height: 16px;
-
-        @media (min-width: 1024px) {
-            margin: 5px;
-        }
-    }
-    @media (min-width: 1024px) {
-        &__margin-li {
-            margin-left: 30px;
-        }
-    }
-    @media (min-width: 1024px) {
-        &__ul {
-            margin-right: 20%;
-            width: 100%;
-        }
-    }
-}
-
-
-.like-a-logo {
-    margin-left: 8%;
     @media (min-width: 1024px){
-        position: absolute;
-        left: 77%;
-        padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: last baseline;
+    height: 114px;}
+        &__without-i {
+            margin-left: -10px;
+            @media (min-width: 1024px) {
+            margin: 5px;
+            }
+        }
+        @media (min-width: 1024px) {
+            &__with-i {
+                margin-left: 5px;
+            }
+        }
+        & i {
+            width: 14px;
+            height: 16px;
+            @media (min-width: 1024px) {
+                margin: 5px;
+            }
+        }
+        @media (min-width: 1024px) {
+            &__margin-li {
+                margin-left: 30px;
+            }
+        }
+        @media (min-width: 1024px) {
+            &__ul {
+                margin-right: 20%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: last baseline;
+                height: 114px;
+            }
+        }
+         &__like-a-logo{
+            margin-left: 8%;
+         @media (min-width: 1024px){
+                position: absolute;
+                left: 77%;
+                padding-bottom: 20px;
+                }
+        }
     }
-}
-
-.all-footers,
-ul {
-    @media (min-width: 1024px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: last baseline;
-        height: 114px;
-    }
-}

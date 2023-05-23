@@ -42,6 +42,20 @@
 }
 }
 
+// Titre de la section restaurant:
+
+.restaurants h2 {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    @media (min-width: 767px) {
+        margin-left: 16%;
+    }
+    @media (min-width: 1024px) {
+        margin-left: 8%;
+    }
+
+}
+
 // Background section "restaurants":
 
 .restaurants {
@@ -104,4 +118,31 @@
     align-items: center;
 }
 
+// Comportement des section "function"et "restaurant" pour le responsive:
+
+.functioning {
+    @media (min-width: 767px){
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    @media (min-width: 1024px) {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }     
+
+// Changement de position des rectangles gris de la section functioning:
+
+.all-gray-rectangle {
+    @media (min-width: 1024px){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4.5%;
+   
+}
+}
 
