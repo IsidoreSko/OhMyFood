@@ -57,7 +57,7 @@
 }
 
 
-// Titre de la section "Fonctionnement":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+// Au sujet de la section "Fonctionnement":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .functioning {
     @media (min-width: 767px){
@@ -70,6 +70,7 @@
             margin-left: auto;
             margin-right: auto;
         }
+// En ce qui concerne le titre:
    & h2 {
     margin-left: 17px;
     margin-top: 45px;
@@ -79,6 +80,7 @@
     }
 }
 }
+
 // Section des rectangles gris:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .all-gray-rectangle {
@@ -86,7 +88,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-// Changement de position des rectangles gris:  
+// Changement de position des rectangles gris en format desktop:  
   @media (min-width: 1024px){
     display: flex;
     flex-direction: row;

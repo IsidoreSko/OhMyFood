@@ -1,17 +1,16 @@
 
-//  Couleurs utilisées dans le site:
+//  Couleurs imposées du site:
 
 $primary-color: #9356DC;
 $secondery-color: #FF79DA;
 $third-color: #99E2D0;
 
-// Couleurs ajoutés pourle site:
+// Couleurs ajoutés pour le site:
 
 $gray-second-color:#EAEAEA;
 $gray-third-color: #7E7E7E;
 $light-gray-color: #F6F6F6;
 $anthracite-color : #353535;
 $green-color: #008766;
-$light-green-color: #99E2D0;
 $button-purple-color: linear-gradient(to left top,$primary-color,$secondery-color);
 $button-purple-color2: linear-gradient(to left top,lighten($primary-color,5),lighten($secondery-color,5));

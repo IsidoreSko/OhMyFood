@@ -1,6 +1,6 @@
 @use "../utils/variable.scss" as v;
 
-// En ce qui concerne les cartes des restaurants pages d'accueil:
+// En ce qui concerne les cartes des restaurants pages d'accueil::::::::::::::::::::::::::::::::::::::::::
 
 .card {
     margin: 20px;
@@ -49,7 +49,7 @@
          width: 100%;
          border-radius:20px 20px 0px 0px ;
 }
-// Icone coeur dans les cartes de la page d'accueil:
+// Icônes "coeur" dans les cartes de la page d'accueil:
             & .fa-heart {
          width: 25px;
          height: 25px;
@@ -66,7 +66,7 @@
 } 
 }
 
-// Icône "coeur" des cartes:
+// Icône "coeur" plein des cartes:
 
  .heart__full {
     opacity: 0;
@@ -90,7 +90,7 @@
     width: 80px;
     height: 29px;
     border-radius: 2px;
-    background-color: v.$light-green-color;
+    background-color: v.$third-color;
     position: absolute;
     left: 68%;
     margin-top: 15px;
@@ -104,7 +104,7 @@
     }
 }
 
-// En ce qui concerne les cartes des menus des restaurants:
+// En ce qui concerne les cartes des menus des restaurants:::::::::::::::::::::::::::::::::::::::::::::::::
 
 .new-card {
     width: 90%;
@@ -177,7 +177,7 @@
     }
 }
 
-// Comportement du l'icône coeur dans la page des restaurants:
+// Comportement du l'icône "coeur" dans la page des restaurants:
 
 .hearts i {
     width: 25px;

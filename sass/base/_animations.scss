@@ -44,6 +44,12 @@
     font-family:'Shrikhand' ;
     color: v.$primary-color;
     font-size: 30px;
+    @media (min-width: 767px){
+        font-size: 80px;
+    }
+    @media (min-width: 1024px){
+        font-size: 100px;
+    }
 // Caractéristiques de l'animation:
     animation: waiting 3s linear;
 }
