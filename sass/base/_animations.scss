@@ -18,7 +18,7 @@
     position: fixed;
 // Caractéristiques de l'animation du "page laoder":
     animation: wai 3s;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
     transition: 3s ease-in-out;
         &__name {
             font-family:'Shrikhand' ;

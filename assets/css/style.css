@@ -536,7 +536,7 @@ li {
   align-items: center;
   position: fixed;
   animation: wai 3s;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
   transition: 3s ease-in-out;
 }
 .loader__name {
