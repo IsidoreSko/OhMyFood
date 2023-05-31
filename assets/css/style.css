@@ -329,6 +329,15 @@ li {
   background-color: #EAEAEA;
 }
 
+.button-city {
+  color: #353535;
+  border: none;
+  background-clip: text;
+  font-weight: 500;
+  font-size: 16px;
+  width: 120px;
+}
+
 .fa-location-dot {
   margin: 20px;
 }
@@ -410,6 +419,9 @@ li {
   align-items: center;
   justify-content: center;
 }
+.rectangle-gray:active i {
+  color: #9356DC;
+}
 @media (min-width: 1024px) {
   .rectangle-gray {
     width: 25%;
@@ -456,9 +468,6 @@ li {
   padding: 0px;
   width: 16px;
   height: 16px;
-}
-.rectangle-gray .fa-store {
-  color: #9356DC;
 }
 
 .restaurants {

@@ -48,12 +48,17 @@
       <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo de Ohmyfood" />
     </header>
     <!-- Ajout de la barre de reherche -->
-    <div class="Localisation-Bar">
+    <form class="Localisation-Bar">
       <!-- Ajout de l'icône "localisation" -->
       <i class="fa-solid fa-location-dot"></i>
       <!-- Case de recherche de la ville -->
-      <span>Paris, Belleville</span>
-    </div>
+      <input
+        class="button-city"
+        type="text"
+        aria-label="recherche de lieu"
+        placeholder="Paris, Belleville"
+      />
+    </form>
     <!-- Ajout de la section "info-barre"-->
     <section class="Info-Bar">
       <h1 class="title">Réservez le menu qui vous convient</h1>
@@ -67,32 +72,32 @@
       <h2>Fonctionnement</h2>
       <div class="all-gray-rectangle">
         <!-- Premier rectangle gris-->
-        <div class="rectangle-gray">
+        <a class="rectangle-gray" href="#">
           <!-- Pastille  avec le numéro-->
           <div class="rectangle-gray__number">1</div>
           <!-- Insertion de l'icône -->
           <i class="fa-solid fa-mobile-screen-button rectangle-gray__i"></i>
           <!-- Texte du rectangle -->
           <p class="rectangle-gray__text">Choisissez un restaurant</p>
-        </div>
+        </a>
         <!-- Deuxième rectangle gris -->
-        <div class="rectangle-gray">
+        <a class="rectangle-gray" href="#">
           <!-- Pastille  avec le numéro-->
           <div class="rectangle-gray__number">2</div>
           <!-- Insertion de l'icône -->
           <i class="fa-sharp fa-solid fa-list-ul rectangle-gray__i"></i>
           <!-- Texte du rectangle -->
           <p class="rectangle-gray__text">Composez votre menu</p>
-        </div>
+        </a>
         <!-- Troisième rectangle gris -->
-        <div class="rectangle-gray">
+        <a class="rectangle-gray" href="#">
           <!-- Pastille  avec le numéro-->
           <div class="rectangle-gray__number">3</div>
           <!-- Insertion de l'icône -->
           <i class="fa-solid fa-store rectangle-gray__i"></i>
           <!-- Texte du rectangle -->
           <p class="rectangle-gray__text">Dégustez au restaurant</p>
-        </div>
+        </a>
       </div>
     </section>
     <!-- Ajout de la section "restaurants" -->
