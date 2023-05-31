@@ -26,6 +26,7 @@
 .button-city {
     color:v.$anthracite-color;
     border: none;
+    -webkit-background-clip: text;
     background-clip: text;
     font-weight: 500;
     font-size: 16px; 

@@ -332,6 +332,7 @@ li {
 .button-city {
   color: #353535;
   border: none;
+  -webkit-background-clip: text;
   background-clip: text;
   font-weight: 500;
   font-size: 16px;
